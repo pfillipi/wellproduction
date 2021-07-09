@@ -22,9 +22,9 @@ interface IChart {
 
 function App() {
   const getData = async () => {
-    const response = await axios.get("https://github.com/pfillipi/wellproduction/blob/main/data.json")
-    const currentValue = response.data.data.map((item: IData) => [item.date, item.value])
-    const errorFormatted = response.data.data.map((item: IData) => [item.date, item.error])
+    const response = await axios.get("http://localhost:8080/data")
+    const currentValue = response.data.map((item: IData) => [item.date, item.value])
+    const errorFormatted = response.data.map((item: IData) => [item.date, item.error])
     return {
       currentValue, errorFormatted
     }
