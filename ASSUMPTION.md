@@ -1,1 +1,3 @@
 - As this Chart Library already have month selection I have used the way it is.
+- The server should be started with the command ```yarn server```
+- The app will run with the command in an separated terminal ```yarn dev```
