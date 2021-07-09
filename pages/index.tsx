@@ -22,7 +22,7 @@ interface IChart {
 
 function App() {
   const getData = async () => {
-    const response = await axios.get("https://raw.githubusercontent.com/pfillipi/wellproduction/main/data.json")
+    const response = await axios.get("http://localhost:8080/data")
     const currentValue = response.data.map((item: IData) => [item.date, item.value])
     const errorFormatted = response.data.map((item: IData) => [item.date, item.error])
     return {
