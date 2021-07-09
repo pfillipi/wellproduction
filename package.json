@@ -1,0 +1,28 @@
+{
+  "name": "wellrate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "json-server --watch data.json --p 8080"
+  },
+  "dependencies": {
+    "apexcharts": "^3.27.2",
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-dom": "17.0.2",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.14",
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
+  }
+}
